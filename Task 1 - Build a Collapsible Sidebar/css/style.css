@@ -1,0 +1,157 @@
+body { background-color:#48427c;
+; }
+
+/*list styleing */
+
+ul {
+  list-style-type: none;
+  margin-top: 50;
+  padding: 0;
+  width: 100%;
+}
+
+li a {
+  display: flex;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  align-items: center;
+  gap:12px;
+
+}
+
+li a.active {
+  background-color: #ff6600;
+  color: rgb(255, 255, 255);
+}
+
+li a:hover {
+  background-color: #555555;
+  color: rgb(255, 0, 0);
+}
+
+.nav-icon{
+  width:20px;
+  height:20px;
+  object-fit: contain;
+
+}
+
+
+
+
+/* Animation styling for button */
+
+.sidebar{
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    background-color: #adadad;
+    transition: 0.5s;
+    padding-top: 80px;
+    
+}
+
+.sidebar.open{
+    left: 0;
+    
+}
+
+.toggle-btn {
+  background: transparent; 
+  border: none;             
+  outline: none;            
+  cursor: pointer;          
+  position: fixed;
+  font-size: 45px;         
+  color: #ff1100;           
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 8px;                        
+  color: #890aff;                          
+  transform: scale(1.1);                      
+}
+
+
+/*logo and text styling */
+
+.logo{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -100px;
+    padding: 20px;
+
+}
+.main-logo{
+  width:200px;
+  height:auto;
+  
+}
+
+.hero-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;    
+    height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    z-index: 1;              
+    pointer-events: none;    
+}
+
+.welcome-text {
+    font-size: 80px;        
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.sub-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7); 
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* for mobile devices */
+@media screen and (max-width: 600px){
+  .sidebar{
+    width: 100%;
+    left: -100%;
+    padding-top: 80px;
+
+  }
+
+  .sidebar.open{
+    left:0;
+
+  }
+
+  .welcome-text{
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  li a{
+    padding: 20px;
+    font-size: 20px;
+  }
+}
