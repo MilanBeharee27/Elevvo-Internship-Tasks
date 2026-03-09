@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sounds and Code</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Crazy Sounds and COOde </h1>
+    <p>Where frequency meets functions.</p>
+</header>
+<div class="filter-container">
+    <input type="text" id="searchInput" placeholder="Search by title..." class="search-bar">
+<div class="filter-container" id="filterContainer">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="coding">Coding</button>
+    <button class="filter-btn" data-category="music">Music</button>
+    <button class="filter-btn" data-category="tech">Tech</button>
+    
+</div>
+
+<div class="container" id="blogGrid">
+    <div class="card" data-category="coding">
+        <img src="assets/code.jpg" alt="Coding">
+        <div class="card-content">
+            <div class="card-date">March 2, 2026</div>
+            <h3 class="card-title">Building Responsive Sidebars #CODE </h3>
+            <p class="card-desc">All my person coding projects in one space.</p>
+        </div>
+    </div>
+
+    <div class="card" data-category="music">
+        <img src="assets/DAW.jpg" alt="Music">
+        <div class="card-content">
+            <div class="card-date">Feb 28, 2026</div>
+            <h3 class="card-title">Music Productions</h3>
+            <p class="card-desc">Creating from the soul, making beats and chill </p>
+        </div>
+    </div>
+
+    <div class="card" data-category="music">
+        <img src="assets/mastering.jpg" alt="Music">
+        <div class="card-content">
+            <div class="card-date">Feb 20, 2026</div>
+            <h3 class="card-title">Mixing the Perfect Track</h3>
+            <p class="card-desc">Top 5 VST plugins used for my latest deep house project.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="blogGrid">
+    <div class="card" data-category="tech">
+        <img src="assets/tech.jpg" alt="Tech">
+        <div class="card-content">
+            <div class="card-date">March 2, 2026</div>
+            <h3 class="card-title">New Tech Trends</h3>
+            <p class="card-desc">Exploring the latest hardware and software in the tech space.</p>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+  <button class="pag-btn">&laquo;</button>
+  <button class="pag-btn active">1</button>
+  <button class="pag-btn">2</button>
+  <button class="pag-btn">&raquo;</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
